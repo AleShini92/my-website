@@ -1,7 +1,9 @@
 @import "font-map";
+@import "color";
 
 header {
     background-image: url("/assets/img/bg-header.png");
+    background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 
@@ -22,6 +24,42 @@ header {
     }
 
     .find__more {
+        display: inline-block;
         text-align: right;
+        position: relative;
+
+        &::after {
+            display: inline-block;
+            content: "↓";
+            position: absolute;
+            transform: scale(1.5);
+            transition: .5s;
+            right: 12%;
+            top: 0;
+            opacity: 0;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            top: 100%;
+        }
+    }
+
+    .social {
+        bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        right: 30px;
+    }
+
+    span.hero__welcome {
+        position: absolute;
+        right: 50px;
+        bottom: -40px;
+        color: $_white;
+        filter: drop-shadow(0 0 4px hsla(0, 0%, 0, 12%));
+        font-size: 150px;
     }
 }
