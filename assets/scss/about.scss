@@ -40,14 +40,14 @@ section.about__container {
 
     .about__text {
 
-        p > span {
+        article.about > span {
             color: $_primary;
             display: block;
             font-weight: 600;
             margin-top: 20px;
         }
 
-        span.download {
+        div.download {
             display: inline-block;
             &::after {
                 background: $_primary;
@@ -79,4 +79,13 @@ section.about__container {
             }
         }
     }
+}
+
+
+article.skills {
+    .skills__container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    } 
 }
