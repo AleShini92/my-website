@@ -95,7 +95,7 @@ $padding: (
   .#{$key} {
     padding: $val;
   }
-  .p-block-#{$key} {
+  .block-#{$key} {
     padding-block: $val;
   }
 

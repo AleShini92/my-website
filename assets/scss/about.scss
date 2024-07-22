@@ -1,0 +1,82 @@
+@import 'color';
+
+section.about__container {
+
+    .about__title {
+        width: 1200px;
+        margin: 0 auto;
+        padding-block-start: 100px;
+        position: relative;
+
+        span {
+            color: $_white;
+            filter: drop-shadow(0 0 4px hsla(0, 0%, 0, 12%));
+            font-weight: bold;
+            font-size: 64px;
+            top: 12px;
+            z-index: -1;
+        }
+
+        h2 {
+            display: inline-block;
+            left: 90px;
+            position: absolute;
+            top: 136px;
+        }
+    }
+
+    .about__me {
+        display: flex;
+        margin: 50px auto;
+        justify-content: space-between;
+        width: 1200px;
+
+        figure {
+            width: 500px;
+            height: 200px;
+            background-color: #5d5d5d;
+        }
+    }
+
+    .about__text {
+
+        p > span {
+            color: $_primary;
+            display: block;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        span.download {
+            display: inline-block;
+            &::after {
+                background: $_primary;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                position: relative;
+                top: -10px;
+                width: 100%;
+            }
+        }
+
+        .button {
+            @mixin button($color: $_primary) {
+                background: $color;
+                border-radius: 10px;
+                cursor: pointer;
+                display: inline-block;
+                padding: 10px 15px;
+            }
+            span.portfolio {
+                @include button;
+                color: $_white;
+            }
+
+            span.skills {
+                @include button($color: none);
+                border: 1px solid $_primary;
+            }
+        }
+    }
+}
