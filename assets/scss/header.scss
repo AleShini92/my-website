@@ -1,0 +1,16 @@
+@import "font-map";
+
+header {
+    background-image: url("/assets/img/bg-header.png");
+    height: 100vh;
+
+    .hero__text {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+
+    p {
+        text-wrap: balance;
+    }
+}

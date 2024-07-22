@@ -4,6 +4,7 @@ dist-ssr
 *.local
 logs
 *.log
+*.css
 
 .vscode/*
 !.vscode/extensions.json

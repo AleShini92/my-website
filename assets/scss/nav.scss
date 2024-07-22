@@ -1,0 +1,42 @@
+@import "color";
+
+nav {
+    position: fixed;
+} 
+
+.header__menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+
+    figure.logo {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+
+        svg {
+            fill: $_white;
+        }
+
+        figcaption {
+            color: $_white;
+        }
+    }
+
+    .menu {
+        ul {
+            display: flex;
+
+            li {
+                list-style-type: none;
+    
+                a {
+                    color: $_white;
+                    padding-inline-end: 1.5rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
