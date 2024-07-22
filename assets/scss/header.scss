@@ -2,15 +2,26 @@
 
 header {
     background-image: url("/assets/img/bg-header.png");
+    background-size: cover;
     height: 100vh;
 
-    .hero__text {
+    .hero__section {
         position: absolute;
+        width: 100%;
+        top: 30%;
+    }
+
+    .hero__text {
+        position: relative;
         top: 30%;
         left: 20%;
     }
 
     p {
         text-wrap: balance;
+    }
+
+    .find__more {
+        text-align: right;
     }
 }
