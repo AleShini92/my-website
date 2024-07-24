@@ -26,9 +26,10 @@ section.about__container {
     }
 
     .about__me {
-        display: flex;
+        display: grid;
+        gap: 0 40px;
+        grid-template-columns: auto auto;
         margin: 50px auto;
-        justify-content: space-between;
         width: 1200px;
 
         figure {
@@ -36,20 +37,33 @@ section.about__container {
             height: 200px;
             background-color: #5d5d5d;
         }
+
+        p.education {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
     }
 
     .about__text {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 1 / 3;
+        justify-content: space-between;
+        width: 30rem;
+        
 
-        article.about > span {
+        article.about > span:first-child {
             color: $_primary;
-            display: block;
+            display: inline-block;
             font-weight: 600;
-            margin-top: 20px;
         }
 
-        div.download {
+        span.download {
             display: inline-block;
-            &::after {
+            margin-block-start: 20px;
+
+            a::after {
                 background: $_primary;
                 content: "";
                 display: inline-block;
@@ -79,13 +93,21 @@ section.about__container {
             }
         }
     }
-}
 
+    article.skills {
+        display: none;
 
-article.skills {
-    .skills__container {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    } 
+        & > span {
+            color: $_primary;
+            font-weight: 600;
+
+        }
+
+        .skills__container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-block-start: 10px;
+        }
+    }
 }

@@ -10,6 +10,10 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 1024px;
+    background: #212121;
+    margin-block-start: 10px;
+    border-radius: 50px;
+    padding: 20px;
 
     figure.logo {
         align-items: center;

@@ -6,26 +6,26 @@ $_black:    hsl(0, 0%, 0%);
 
 // scss-docs-start colors-map
 $colors: (
-    "primary":  $_primary,
-    "black":    $_black,
-    "white":    $_white,
+  "primary":  $_primary,
+  "black":    $_black,
+  "white":    $_white,
 ) !default;
 
 //color txt, bg, btn-border
 @each $key, $val in $colors {
-    .text-#{$key} {
-      color: $val;
-    }
-  
-    .bg-#{$key} {
-      background: $val;
-    }
-  
-    .btn-#{$key} {
-      border: 1px solid $val;
-    }
-
-    .b-b_#{$key} {
-      border-bottom: 1px solid $val;
-    }
+  .text-#{$key} {
+    color: $val;
   }
+  
+  .bg-#{$key} {
+    background: $val;
+  }
+  
+  .btn-#{$key} {
+    border: 1px solid $val;
+  }
+
+  .b-b_#{$key} {
+    border-bottom: 1px solid $val;
+  }
+}
