@@ -25,15 +25,30 @@ a {
   margin: 0 auto;
   padding-block-start: 100px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+
+
+
+  $f-z: 64px;
+  
+  @mixin text__bg($f-z: 64px) {
+    color: $_white;
+    filter: drop-shadow(0 0 4px hsla(0, 0%, 0, 12%));
+    font-weight: bold;
+    font-size: $f-z;
+    top: 12px;
+    z-index: -1;
+  }
 
   span {
-      color: $_white;
-      filter: drop-shadow(0 0 4px hsla(0, 0%, 0, 12%));
-      font-weight: bold;
-      font-size: 64px;
-      top: 12px;
-      z-index: -1;
+    @include text__bg;
   }
+
+  span.design {
+    @include text__bg($f-z: 100px)
+  }
+
 
   h2 {
       display: inline-block;
