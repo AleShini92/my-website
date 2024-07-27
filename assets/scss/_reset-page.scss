@@ -65,6 +65,16 @@ li {
   }
 }
 
+.top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: $_primary;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $_white;
+}
 
 // .poppins-regular {
 //   font-family: "Poppins", sans-serif;
