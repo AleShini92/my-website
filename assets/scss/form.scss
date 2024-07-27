@@ -1,3 +1,5 @@
+@import "color";
+
 section.container__form {
 
     .form {
@@ -11,33 +13,89 @@ section.container__form {
             display: flex;
             flex-direction: row;
             gap: 60px;
-            width: 400px;
+            justify-content: space-between;
+            height: 50px;
         }
 
         input {
             display: block;
         }
 
-        div {
+        .email, .container__form_user  {
             width: 400px;
 
             input, textarea {
                 width: 100%;
                 margin-block: 10px;
+                padding: 10px;
+            }
+
+            .send {
+                display: flex;
+                justify-content: flex-end;
+
+                span {
+                    display: flex;
+                    padding: 8px 20px;
+                    border-radius: 30px;
+                    background: $_primary;
+                    color: $_white;
+                    cursor: pointer;
+
+                    svg {
+                        width: 20px;
+                        margin-block-start: 3px;
+                        margin-inline-end: 5px;
+                        fill: $_white;
+                    }
+                }
             }
         }
 
-
         .name, .surname {
+            width: 50%;
             position: relative;
 
-            input ~ label[for="name"] {
+            .input {
                 position: absolute;
-                top: 8px;
+                top: 0;
+                background: transparent;
+                z-index: 1;
+                border: 1px solid $_form;
+                border-radius: 5px;
+                outline: none;
+            }
+
+            .label {
+                position: absolute;
+                top: 16px;
+                left: 10px;
+                color: $_form;
+                transition: .2s ease;
+            }
+
+            input:focus  {
+                border: 2px solid $_primary;
             }
 
             .input:focus ~ .label, .input:not(:placeholder-shown).input:not(:focus) ~ .label {
-                top: -10px;
+                transform: translateY(-17px) scale(.84);
+                z-index: 1;
+                background: $_white;
+                color: $_primary;
+            }
+        }
+
+        ::placeholder {
+            font-family: poppins;
+            font-size: 16px;
+        }
+
+        textarea, input{
+            outline: none;
+
+            &:focus {
+                border: 2px solid $_primary;
             }
         }
     }
