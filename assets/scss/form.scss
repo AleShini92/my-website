@@ -93,6 +93,7 @@ section.container__form {
 
         textarea, input{
             outline: none;
+            font-family: poppins;
 
             &:focus {
                 border: 2px solid $_primary;
