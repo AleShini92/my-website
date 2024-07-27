@@ -9,6 +9,7 @@ section.container__form {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        overflow: hidden;
 
         .container__form_user {
             display: flex;
@@ -76,7 +77,7 @@ section.container__form {
             }
 
             input:focus  {
-                border: 2px solid $_primary;
+                border: 1px solid $_primary;
             }
 
             .input:focus ~ .label, .input:not(:placeholder-shown).input:not(:focus) ~ .label {
@@ -97,7 +98,7 @@ section.container__form {
             font-family: poppins;
 
             &:focus {
-                border: 2px solid $_primary;
+                border: 1px solid $_primary;
             }
         }
     }
