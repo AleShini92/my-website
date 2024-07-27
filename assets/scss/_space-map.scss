@@ -95,12 +95,17 @@ $padding: (
   .#{$key} {
     padding: $val;
   }
-  .block-#{$key} {
+  .block_#{$key} {
     padding-block: $val;
   }
 
   .bottom_#{$key} {
     padding-bottom: $val;
+  }
+
+
+  .top_#{$key} {
+    padding-top: $val;
   }
 }
 

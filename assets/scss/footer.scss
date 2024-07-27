@@ -1,0 +1,38 @@
+@import "color";
+
+.container__footer {
+    background: hsl(0, 0%, 13%);
+    color: $_white;
+
+    .container__text {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        p {
+            margin-block-end: 10px;
+            font-weight: 900;
+        }
+        .logo{
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            svg {
+                fill: $_white;
+            }
+        }
+
+        .social {
+            svg {
+                margin-right: 10px;
+            }
+        }
+
+        a {
+            color: $_white;
+        }
+    }
+}

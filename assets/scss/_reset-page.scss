@@ -8,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -19,6 +23,9 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
 
 .container__title {
   width: 1200px;
