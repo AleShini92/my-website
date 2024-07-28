@@ -1,7 +1,7 @@
 @import "color";
 
 .container__works {
-    width: 1200px;
+    width: clamp(320px, 80%, 1200px);
     margin: 0 auto;
 
     /*
@@ -17,28 +17,46 @@
         gap: 20px;
         justify-content: center;
 
+        @include media( "screen", ">minWidth", "<bp2Width" ){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .works__image_meditactive {
             grid-column: 1 / 3;
             grid-row: 1 / 3;
+
+            @include media( "screen", ">minWidth", "<bp2Width" ){
+                width: clamp(300px, 80%, 760px);
+            }
         }
 
 
         .works__image_orizon {
             width: 100%;
-            background: #212121;
             grid-column: 3;
             grid-row: 1/2;
+            object-fit: cover;
 
             figcaption.img__text {
                 font-size: 14px;
+            }
+
+            @include media( "screen", ">minWidth", "<bp2Width" ){
+                width: clamp(300px, 80%, 760px);
             }
         }
 
         .works__image_2 {
             width: 100%;
-            background: #212121;
+            object-fit: cover;
             grid-column: 3;
             grid-row: 2/3;
+
+            @include media( "screen", ">minWidth", "<bp2Width" ){
+                width: clamp(300px, 80%, 760px);
+            }
         }
 
         figure {
@@ -54,7 +72,6 @@
             width: 100%;
             height: auto;
             object-fit: cover;
-            position: absolute;
         }
 
         figcaption.img__text {

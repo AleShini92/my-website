@@ -1,3 +1,9 @@
+/*
+*
+* button switch portfolio to skills
+*
+*/
+
 function mySkills() {
 
     var skill = document.getElementById("my-skills");
@@ -25,6 +31,11 @@ function portfolio() {
 }
 
 
+/*
+*
+* button scroll top
+*
+*/
 
 let mybutton = document.getElementById("myBtn");
 
@@ -44,3 +55,19 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+/*
+*
+* change window.title when change page
+*
+*/
+
+let titleHead = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Ti aspetto 😁";
+});
+
+window.addEventListener("focus", () => {
+  document.title = titleHead;
+});

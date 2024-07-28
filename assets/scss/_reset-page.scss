@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 @import "color";
-
+@import "responsive-map";
 body {
   font-family: 'poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -28,7 +28,7 @@ li {
 }
 
 .container__title {
-  width: 1200px;
+  width: clamp(320px, 90%, 1200px);
   margin: 0 auto;
   padding-block-start: 100px;
   position: relative;
@@ -37,9 +37,9 @@ li {
 
 
 
-  $f-z: 64px;
+  //$f-z: clamp(34px, 50%, 64px);
   
-  @mixin text__bg($f-z: 64px) {
+  @mixin text__bg($f-z: clamp(2em, 5vw, 4em)) {
     color: $_white;
     filter: drop-shadow(0 0 4px hsla(0, 0%, 0, 12%));
     font-weight: bold;
@@ -53,15 +53,20 @@ li {
   }
 
   span.design {
-    @include text__bg($f-z: 100px)
+    @include text__bg($f-z: clamp(6vw, 5vw, .5em))
   }
 
 
   h2 {
-      display: inline-block;
-      left: 90px;
-      position: absolute;
-      top: 136px;
+    display: inline-block;
+    left: 40px;
+    position: absolute;
+    top: 118px;
+    font-size: clamp(1em, 4vw, 3em);
+    @include media( "screen", ">minWidth", "<bp2Width" ){
+      left: 26px;
+      top: 116px;
+    }
   }
 }
 
@@ -74,6 +79,7 @@ li {
   border-radius: 50%;
   cursor: pointer;
   color: $_white;
+  z-index: 3;
 }
 
 // .poppins-regular {
