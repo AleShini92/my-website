@@ -30,6 +30,14 @@ section.container__form {
                 width: 100%;
                 margin-block: 10px;
                 padding: 10px;
+                outline: none;
+                font-family: poppins;
+                border-radius: 5px;
+                border: 1px solid;
+
+                &:focus {
+                    border: 1px solid $_primary;
+                }
             }
 
             .send {
@@ -70,7 +78,7 @@ section.container__form {
 
             .label {
                 position: absolute;
-                top: 16px;
+                top: 17px;
                 left: 10px;
                 color: $_form;
                 transition: .2s ease;
@@ -81,7 +89,7 @@ section.container__form {
             }
 
             .input:focus ~ .label, .input:not(:placeholder-shown).input:not(:focus) ~ .label {
-                transform: translateY(-17px) scale(.84);
+                transform: translateY(-18px) scale(.84);
                 z-index: 1;
                 background: $_white;
                 color: $_primary;
@@ -91,15 +99,6 @@ section.container__form {
         ::placeholder {
             font-family: poppins;
             font-size: 16px;
-        }
-
-        textarea, input{
-            outline: none;
-            font-family: poppins;
-
-            &:focus {
-                border: 1px solid $_primary;
-            }
         }
     }
 }

@@ -10,7 +10,7 @@
         display: flex;
         justify-content: space-around;
 
-        p {
+        :where(.links, .social) :is(p) {
             margin-block-end: 10px;
             font-weight: 900;
         }
