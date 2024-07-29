@@ -63,6 +63,7 @@ li {
     background: linear-gradient(to right, #87c0ff, #f9a8f7);
     background-clip: text;
     font-size: clamp(2em, 6vw, 6em);
+    opacity: .6;
   }
 
 
@@ -89,6 +90,14 @@ li {
   cursor: pointer;
   color: $_white;
   z-index: 3;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
 }
 
 // .poppins-regular {

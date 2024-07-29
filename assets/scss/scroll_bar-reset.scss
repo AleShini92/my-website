@@ -1,0 +1,31 @@
+
+.scrollbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.scrollbar-thumb {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(to top, #87c0ff, #f9a8f7);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: none;
+}
