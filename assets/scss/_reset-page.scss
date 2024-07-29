@@ -12,6 +12,12 @@ html {
   scroll-behavior: smooth;
 }
 
+
+.overflow {
+  overflow: hidden;
+  height: 100vh;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;

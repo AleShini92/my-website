@@ -1,4 +1,4 @@
-@import "color";
+
 
 header {
     background-image: url("/assets/img/bg-header.png");
@@ -10,16 +10,13 @@ header {
         position: absolute;
         width: 100%;
         top: 30%;
-
-        .text__more-information {
-            min-width: 300px;
-        }
     }
 
     .hero__text {
         position: relative;
         top: 30%;
         left: 20%;
+        width: clamp(100px, 50%, 300px);
     }
 
     p {

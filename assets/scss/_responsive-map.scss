@@ -3,7 +3,7 @@ $mediaMaxWidth: 1024px;
 $mediaBp1Width: 960px;
 $mediaBp2Width: 768px; // added for .works section
 $mediaBp3Width: 435px; // added footer
-$mediaMinWidth: 320px;
+$mediaMinWidth: 50px;
 
 @function translate-media-condition($c) {
   $condMap: (

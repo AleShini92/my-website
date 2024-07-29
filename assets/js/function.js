@@ -23,10 +23,10 @@ function portfolio() {
     var skill = document.getElementById("my-skills");
 
     if(portfolio.style.display === "block") {
-        portfolio.style.display = "block";
+      portfolio.style.display = "block";
     } else {
-        portfolio.style.display = "block";
-        skill.style.display = "none"
+      portfolio.style.display = "block";
+      skill.style.display = "none"
     }
 }
 
@@ -71,3 +71,31 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
   document.title = titleHead;
 });
+
+
+/*
+*
+* remove hamburger menu on click link
+*
+*/
+
+
+function toggleClass() {
+  let checkbox = document.getElementById("myCheckbox");
+  let element = document.getElementById("home");
+
+  if (checkbox.checked) {
+    element.classList.add("overflow");
+  } else {
+    element.classList.remove("overflow");
+  }
+}
+
+function removeClass() {
+  let checkbox = document.getElementById("myCheckbox");
+  let element = document.getElementById("home");
+
+  element.classList.remove("overflow");
+  // L'ancoraggio al link avviene automaticamente senza ulteriori azioni
+  checkbox.checked = "";
+}
