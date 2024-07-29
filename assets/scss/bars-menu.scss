@@ -30,7 +30,7 @@ nav {
         left: 50px;
         width: 30px;
         height: 2px;
-        background: $_primary;
+        background: linear-gradient(to right, #61a9fb, #f957f7);
         display: block;
         -webkit-transform-origin: center;
         transform-origin: center;
@@ -46,7 +46,7 @@ nav {
         display: block;
         width: 100%;
         height: 100%;
-        background: $_primary;
+        background: linear-gradient(to right, #61a9fb, #f957f7);
     }
       
     label .hamburger:before { top: -10px; }
