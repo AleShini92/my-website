@@ -5,20 +5,37 @@
     color: $_white;
 
     .container__text {
-        width: clamp(320px, 80%, 1200px);
-        margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        margin: 0 auto;
+        width: clamp(320px, 80%, 1200px);
+
+        @include media( "screen", ">minWidth", "<bp2Width" ){
+            flex-direction: column;
+
+            :is(p, a) {
+                font-size: .8rem;
+            }
+        }
 
         :where(.links, .social) :is(p) {
-            margin-block-end: 10px;
             font-weight: 900;
+            margin-block-end: 10px;
         }
-        .logo{
+
+        .links, .social {
+
+            @include media( "screen", ">minWidth", "<bp2Width" ){
+                margin-block-start: 10px;
+            }
+        }
+
+        .logo {
+
             figure {
+                align-items: center;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
             }
             svg {
                 fill: $_white;

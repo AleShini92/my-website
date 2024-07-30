@@ -1,6 +1,6 @@
 .container__works {
-    width: clamp(320px, 80%, 1200px);
     margin: 0 auto;
+    width: clamp(320px, 80%, 1200px);
 
     /*
     *
@@ -10,15 +10,15 @@
 
     .works {
         display: grid;
-        grid-template-columns: repeat(3, auto);
         grid-auto-rows: minmax(250px, auto);
+        grid-template-columns: repeat(3, auto);
         gap: 20px;
         justify-content: center;
 
         @include media( "screen", ">minWidth", "<bp2Width" ){
+            align-items: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
 
         .works__image_meditactive {
@@ -47,10 +47,10 @@
         }
 
         .works__image_2 {
-            width: 100%;
-            object-fit: cover;
             grid-column: 3;
             grid-row: 2/3;
+            object-fit: cover;
+            width: 100%;
 
             @include media( "screen", ">minWidth", "<bp2Width" ){
                 width: clamp(300px, 80%, 760px);
@@ -63,13 +63,14 @@
         }
 
         figure {
-            width: 100%;
             position: relative;
-        }
-        img {
             width: 100%;
+        }
+
+        img {
             height: 100%;
             object-fit: cover;
+            width: 100%;
         }
 
         figcaption.img__text {
@@ -78,16 +79,16 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            justify-content: center;
             opacity: 0;
             padding: 2rem;
             position: absolute;
             top: 0;
-            justify-content: center;
             width: 100%;
 
             span {
-                font-weight: 700;
                 color: $_primary;
+                font-weight: 700;
             }
 
             &:hover {    
@@ -96,8 +97,8 @@
             }
 
             svg {
-                width: 15px;
                 fill: $_primary;
+                width: 15px;
             }
         }
 

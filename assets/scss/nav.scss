@@ -7,18 +7,16 @@ nav {
 
 .header__menu {
     align-items: center;
+    background: #212121;
+    border-radius: 50px;
     display: flex;
     justify-content: space-between;
     width: clamp(320px, 80%, 1200px);
-    background: #212121;
-    margin-block-start: 10px;
-    border-radius: 50px;
-    padding: 20px;
 
     @include media( "screen", ">minWidth", "<bp2Width" ){
-        width: 100%;
         border-radius: 0;
         margin-block-start: 0;
+        width: 100%;
     }
 
     figure.logo {
@@ -48,9 +46,9 @@ nav {
                 list-style-type: none;
     
                 a {
-                    position: relative;
                     color: $_white;
                     margin-inline-end: 1.5rem;
+                    position: relative;
                     text-decoration: none;
 
                     &:hover {

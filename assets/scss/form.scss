@@ -3,13 +3,12 @@
 section.container__form {
 
     .form {
-        width: clamp(320px, 80%, 1200px);
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 10px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
         overflow: hidden;
+        width: clamp(320px, 80%, 1200px);
 
         .container__form_user {
             display: flex;
@@ -18,9 +17,9 @@ section.container__form {
             justify-content: space-between;
 
             @include media( "screen", ">minWidth", "<bp3Width" ){
+                align-items: center;
                 flex-direction: column;
                 gap: 0;
-                align-items: center;
             }
         }
 
@@ -32,13 +31,13 @@ section.container__form {
             width: clamp(300px, 80%, 400px);
 
             input, textarea {
-                width: 100%;
-                margin-block: 10px;
-                padding: 10px;
-                outline: none;
-                font-family: poppins;
-                border-radius: 5px;
                 border: 1px solid;
+                border-radius: 5px;
+                font-family: poppins;
+                margin-block: 10px;
+                outline: none;
+                padding: 10px;
+                width: 100%;
 
                 &:focus {
                     border: 1px solid $_primary;
@@ -50,41 +49,45 @@ section.container__form {
                 justify-content: flex-end;
 
                 span {
-                    display: flex;
-                    padding: 8px 20px;
-                    border-radius: 30px;
                     background: $_primary;
+                    border-radius: 30px;
                     color: $_white;
                     cursor: pointer;
+                    display: flex;
+                    padding: 8px 20px;
 
                     svg {
-                        width: 20px;
+                        fill: $_white;
                         margin-block-start: 3px;
                         margin-inline-end: 5px;
-                        fill: $_white;
+                        width: 20px;
                     }
                 }
             }
         }
 
         .name, .surname {
-            width: 50%;
             position: relative;
+            width: 50%;
+
+            @include media( "screen", ">minWidth", "<bp3Width" ){
+                width: 100%;
+            }
 
             .input {
-                top: 0;
                 background: transparent;
-                z-index: 1;
                 border: 1px solid $_form;
                 border-radius: 5px;
                 outline: none;
+                top: 0;
+                z-index: 1;
             }
 
             .label {
-                position: absolute;
-                top: 17px;
-                left: 10px;
                 color: $_form;
+                left: 10px;
+                top: 17px;
+                position: absolute;
                 transition: .2s ease;
                 z-index: -1;
             }
@@ -94,10 +97,10 @@ section.container__form {
             }
 
             .input:focus ~ .label, .input:not(:placeholder-shown).input:not(:focus) ~ .label {
-                transform: translateY(-18px) scale(.84);
-                z-index: 1;
                 background: $_white;
                 color: $_primary;
+                transform: translateY(-18px) scale(.84);
+                z-index: 1;
             }
         }
 

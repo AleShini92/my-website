@@ -5,11 +5,17 @@ $_white:    hsl(0, 0%, 100%);
 $_black:    hsl(0, 0%, 0%);
 $_form:     hsl(0, 0%, 38%);
 
+$_blue-ligh:     hsl(212, 100%, 76%);
+$_magent-light:  hsl(301, 87%, 82%);
+
+
 // scss-docs-start colors-map
 $colors: (
   "primary":  $_primary,
   "black":    $_black,
   "white":    $_white,
+  "blue":     $_blue-ligh,
+  "magent":   $_magent-light,
 ) !default;
 
 //color txt, bg, btn-border
