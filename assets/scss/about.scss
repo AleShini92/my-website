@@ -7,12 +7,12 @@ section.about__container {
         gap: 0 40px;
         grid-template-columns: 33% auto;
         margin: 50px auto;
-        width: clamp(320px, 80%, 1200px);
+        width: clamp(320px, 80%, 860px);
 
         @include media( "screen", ">minWidth", "<bp3Width" ){
             display: flex;
             flex-direction: column;
-        };
+        }
 
         figure {
             width: 100%;
