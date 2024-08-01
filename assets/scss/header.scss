@@ -5,10 +5,19 @@ header {
     height: 100vh;
 
     .hero__section {
+        container-name: find__more;
+        container-type: inline-size;
         position: absolute;
         top: 30%;
         width: 100%;
     }
+
+    @container find__more (max-width: 320px) {
+        .hero__section .find__more {
+            margin-top: 10px;
+        }  
+    }
+
 
     .hero__text {
         position: relative;
@@ -25,6 +34,7 @@ header {
         display: inline-block;
         position: relative;
         text-align: right;
+        margin-top: 20px;
 
         &::after {
             content: "↓";
@@ -42,7 +52,6 @@ header {
             top: 100%;
         }
     }
-
     .social {
         bottom: 150px;
         display: flex;

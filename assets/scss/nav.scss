@@ -12,6 +12,8 @@ nav {
     display: flex;
     justify-content: space-between;
     width: clamp(320px, 80%, 1200px);
+    container-name: name__logo;
+    container-type: inline-size;
 
     @include media( "screen", ">minWidth", "<bp2Width" ){
         border-radius: 0;
@@ -30,6 +32,16 @@ nav {
 
         figcaption {
             color: $_white;
+
+            @include media( "screen", ">minWidth", "<bp2Width" ){
+                display: none;
+            }
+        }
+    }
+
+    @container name__logo (max-width: 769px) {
+        .logo figcaption {
+            display: none;
         }
     }
 
