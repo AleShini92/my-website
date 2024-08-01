@@ -5,19 +5,19 @@ section.about__container {
     .about__me {
         display: grid;
         gap: 0 40px;
-        grid-template-columns: 33% auto;
+        grid-template-columns: 42% auto;
         margin: 50px auto;
-        width: clamp(320px, 80%, 860px);
+        width: clamp(300px, 70%, 890px);
 
-        @include media( "screen", ">minWidth", "<bp3Width" ){
+        @include media( "screen", ">minWidth", "<bp2Width" ){
             display: flex;
             flex-direction: column;
         }
 
         figure {
             background-color: #5d5d5d;
-            height: 200px;
-            width: 100%;
+            height: 220px;
+            width: clamp(200px, 100%, 700px);
         }
 
         // education Accademy
