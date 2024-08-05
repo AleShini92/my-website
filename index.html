@@ -6,9 +6,15 @@
         <title>Alessandro Catucci - Front-end</title>
         <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <!-- open graph -->
+        <meta name="description" content="Benvenuti nel sito web di Alessandro Catucci. Scopri i miei progetti di programmazione e design.">
+        <meta property="og:title" content="landing page">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="Scopri i miei lavori di programmazione e design.">
     </head>
     <body id="home">
-        
         <!-- button go-to-top -->
         <span class="top" id="myBtn" onclick="topFunction()">
             top
@@ -49,8 +55,8 @@
         <header>
             <section class="hero__section">
                     <div class="hero__text text-white w-20">
-                        <p class="f-5">I'm a </p>
-                        <h1 class="bottom_p-3 b-b_white">Designer</h1>
+                        <p class="f-4">I'm a </p>
+                        <h1 class="h1 bottom_p-3 b-b_white">Designer</h1>
                         <p class="text__more-information mt-20">
                             I’m a Front-End developer,
                             with a passion for UX/UI design...
@@ -110,7 +116,7 @@
                                 After that I began to understand <strong>UX/UI study</strong>. In 2024 I resumed my <strong>front-end</strong> studies with the <strong>start2impact University</strong> course.
                             </p>
                             <span class="download">
-                                <a class="text-primary" href="assets/img/Curriculum.pdf" download="Alessandro Catucci" target="_blank">download</a>
+                                <a class="text-primary" href="assets/img/Curriculum.pdf" download="Alessandro Catucci" target="_blank">download CV</a>
                             </span>
                         </article>
                         <!-- skills container -->
@@ -284,7 +290,7 @@
                     </div>
                     <div class="email">
                         <input type="email" name="" id="email" placeholder="email@example.com" required>
-                        <textarea name="" id="message" placeholder="Your message here..." rows="6" cols="50"></textarea>
+                        <textarea name="" id="message" placeholder="Your message here..." rows="6" cols="50" required></textarea>
                         <!-- button send -->
                         <div class="send">
                             <button type="submit" id="sendButton" class="spinner">

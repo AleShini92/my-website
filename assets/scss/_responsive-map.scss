@@ -37,11 +37,13 @@ $mediaMinWidth: 50px;
   @media #{$query}  { @content; }
 }
 
-/**
-  * example media
-  */
+/*
+*
+* example media
+*
+*/
 
-// .nameTag / class / id {
+// nameTag / .class / #id {
 
 //     @include media( "retina" ){
 
