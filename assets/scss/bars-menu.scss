@@ -1,13 +1,13 @@
-.bars {
-    display: none;
-
-    @include media( "screen", ">minWidth", "<bp2Width" ){
-        display: block;
-    }
-}
-
-
 nav {
+
+    label {
+        display: none;
+    
+        @include media( "screen", ">minWidth", "<bp2Width" ){
+            display: block;
+        }
+    }
+
     label .menu {
         position: absolute;
         right: -100px;

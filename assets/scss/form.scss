@@ -105,8 +105,10 @@ section.container__form {
                 left: 10px;
                 top: 17px;
                 position: absolute;
-                transition: .2s ease;
+                transition: .2s ease-in-out;
                 z-index: -1;
+                -moz-transition: .2s ease-in-out;
+                -o-transition: .2s ease-in-out;
 
                 span {
                     color: red;
@@ -122,6 +124,8 @@ section.container__form {
                 color: $_primary;
                 transform: translateY(-18px) scale(.84);
                 z-index: 1;
+                -moz-transform: translateY(-18px) scale(.84);
+                -o-transform: translateY(-18px) scale(.84);
             }
         }
 
