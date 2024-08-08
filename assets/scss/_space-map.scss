@@ -10,7 +10,7 @@ $spacers: (
 );
 
 @each $key, $val in $spacers {
-  .b-radius-#{$key} {
+  .b-r-#{$key} {
     border-radius: $val;
   }
 }

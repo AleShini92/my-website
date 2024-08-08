@@ -1,5 +1,3 @@
-@import 'color';
-
 section.about__container {
 
     .about__me {
@@ -76,9 +74,7 @@ section.about__container {
         }
 
         .button {
-            @mixin button($color: $_primary) {
-                background: $color;
-                border-radius: 10px;
+            @mixin button {
                 cursor: pointer;
                 display: inline-block;
                 padding: 10px 15px;
@@ -89,8 +85,7 @@ section.about__container {
             }
 
             span.skills {
-                @include button($color: none);
-                border: 1px solid $_primary;
+                @include button;
 
                 &:hover {
                     background: $_primary;
