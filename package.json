@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "my website, and portfolio",
   "main": "index.js",
+  "type": "git",
+  "url": "git+https://github.com/AleShini92/my-website.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run webpack",
-    "webpack": "webpack --watch",
+    "predeploy": "npm run build",
+    "watch": "webpack --watch",
+    "build": "webpack",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
