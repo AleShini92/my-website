@@ -80,7 +80,7 @@ nav {
         
     }
       
-    label input:checked + .menu + ul { opacity: 1;}
+    label input:checked + .menu + ul { display: block;}
       
     label ul {
         z-index: 200;
@@ -89,7 +89,7 @@ nav {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        opacity: 0;
+        display: none;
         -webkit-transition: .25s 0s ease-in-out;
         transition: .25s 0s ease-in-out;
     }
