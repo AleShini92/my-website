@@ -19,6 +19,29 @@ nav {
         border-radius: 0;
         margin-block-start: 0;
         width: 100%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .theme {
+        border: 1px solid $_white;
+        border-radius: 50px;
+        cursor: pointer;
+        height: 30px;
+        transition: .3s ease-in-out;
+        width: 60px;
+
+        .circle {
+            background: $_white;
+            border-radius: 50%;
+            display: inline-block;
+            height: 22px;
+            left: 3px;
+            position: relative;
+            top: 3px;
+            transition: .3s ease-in-out;
+            width: 22px;
+        }
     }
 
     figure.logo {
