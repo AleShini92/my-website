@@ -31,7 +31,8 @@ section.container__form {
             width: clamp(300px, 80%, 400px);
 
             input, textarea {
-                border: 1px solid;
+                background: var(--white);
+                border: 1px solid $_form;
                 border-radius: 5px;
                 font-family: poppins;
                 margin-block: 10px;
@@ -120,7 +121,7 @@ section.container__form {
             }
 
             .input:focus ~ .label, .input:not(:placeholder-shown).input:not(:focus) ~ .label {
-                background: $_white;
+                background: var(--text);
                 color: $_primary;
                 transform: translateY(-18px) scale(.84);
                 z-index: 1;

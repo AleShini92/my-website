@@ -82,29 +82,6 @@ function removeClass() {
 *
 */
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const myButton = document.getElementById('myBtn');
-
-//   function scrollFunction() {
-//       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//           myButton.style.display = 'block';
-//       } else {
-//           myButton.style.display = 'none';
-//       }
-//   }
-
-//   function topFunction() {
-//       document.body.scrollTop = 0;
-//       document.documentElement.scrollTop = 0;
-//   }
-
-//   window.scrollFunction = scrollFunction; // Esponi la funzione scrollFunction globalmente
-//   window.topFunction = topFunction; // Esponi la funzione topFunction globalmente
-
-//   // Inizializza il pulsante
-//   scrollFunction(); // Assicura che il pulsante sia mostrato/nascosto all'inizio
-// });
-
 
 let mybutton = document.getElementById("myBtn");
 
