@@ -15,33 +15,13 @@ nav {
     container-name: name__logo;
     container-type: inline-size;
 
+
     @include media( "screen", ">minWidth", "<bp2Width" ){
         border-radius: 0;
         margin-block-start: 0;
         width: 100%;
         justify-content: flex-start;
         gap: 20px;
-    }
-
-    .theme {
-        border: 1px solid $_white;
-        border-radius: 50px;
-        cursor: pointer;
-        height: 30px;
-        transition: .3s ease-in-out;
-        width: 60px;
-
-        .circle {
-            background: $_white;
-            border-radius: 50%;
-            display: inline-block;
-            height: 22px;
-            left: 3px;
-            position: relative;
-            top: 3px;
-            transition: .3s ease-in-out;
-            width: 22px;
-        }
     }
 
     figure.logo {
@@ -69,15 +49,13 @@ nav {
     }
 
     .menu {
-
-        @include media( "screen", ">minWidth", "<bp2Width" ){
-            display: none;
-        }
-
         ul {
             display: flex;
 
             li {
+                @include media( "screen", ">minWidth", "<bp2Width" ){
+                    display: none;
+                }
                 list-style-type: none;
     
                 a {
@@ -107,6 +85,27 @@ nav {
                         opacity: 1;
                         width: 100%;
                     }
+                }
+            }
+
+            .theme {
+                border: 1px solid $_white;
+                border-radius: 50px;
+                cursor: pointer;
+                height: 30px;
+                transition: .3s ease-in-out;
+                width: 60px;
+        
+                .circle {
+                    background: $_white;
+                    border-radius: 50%;
+                    display: inline-block;
+                    height: 22px;
+                    left: 3px;
+                    position: relative;
+                    top: 3px;
+                    transition: .3s ease-in-out;
+                    width: 22px;
                 }
             }
         }
