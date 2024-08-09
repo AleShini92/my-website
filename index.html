@@ -31,27 +31,33 @@
                         </svg>
                         <figcaption>Alessandro Catucci</figcaption>
                     </figure>
-                    <!-- color scheme: dark-light theme -->
-                    <div class ="theme" id="theme">
-                        <span class="circle" id="circle"></span>
-                    </div>            
+                    <!-- menu and button dark mode -->
                     <div class="menu">
                         <ul>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About Me</a></li>
                             <li><a href="#portfolio">Works</a></li>
                             <li><a href="#contact">Contatti</a></li>
+                            <!-- color scheme: dark-light theme -->
+                            <div class="theme" id="theme">
+                                <span class="circle" id="circle"></span>
+                            </div>   
                         </ul>
                     </div>
                 </div>
                 <label class="bars">
-                    <input type="checkbox" id="myCheckbox" onclick="toggleClass()">
+                    <input type="checkbox" id="myCheckbox" >
                     <span class="menu"> <span class="hamburger"></span> </span>
                     <ul>
                         <li><a href="#home" class="myLink" onclick="removeClass()" >Home</a></li>
                         <li><a href="#about" class="myLink" onclick="removeClass()" >About Me</a></li>
                         <li><a href="#portfolio" class="myLink" onclick="removeClass()" >works</a></li>
                         <li><a href="#contact" class="myLink" onclick="removeClass()" >Contatti</a></li>
+                        <li>
+                            <div class="theme" id="theme">
+                                <span class="circle" id="circle"></span>
+                            </div>
+                        </li>
                     </ul>
                 </label>
         </nav>

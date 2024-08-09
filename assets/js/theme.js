@@ -24,11 +24,15 @@ theme.addEventListener('click', (event) => {
     // Se il cerchio è già spostato a destra, lo sposta indietro a sinistra
     circle.style.transform = `translateX(0px)`;
     circle.style.background = "white";
+
+    // imposto il colore iniziale
     theme.style.borderColor = "white";
   } else {
     // Se il cerchio non è spostato, lo sposta a destra
     circle.style.transform = `translateX(30px)`;
     circle.style.background = "#ffc900";
+
+    // cambio colore al click
     theme.style.borderColor = "#ffc900";
   }
 
