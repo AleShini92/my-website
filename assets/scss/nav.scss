@@ -95,6 +95,25 @@ nav {
                 height: 30px;
                 transition: .3s ease-in-out;
                 width: 60px;
+                position: relative;
+
+                &::after {
+                    content: "☀️";
+                    color: var(--white);
+                    display: inline;
+                    position: absolute;
+                    z-index: -1;
+                    right: 6px;
+                    top: 2px;
+                }
+
+                &::before {
+                    content: "🌙";
+                    display: inline;
+                    position: absolute;
+                    left: 3px;
+                    top: 2px;
+                }
         
                 .circle {
                     background: $_white;
