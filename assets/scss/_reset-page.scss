@@ -5,16 +5,16 @@
 
 :root {
   color-scheme: light;
-  --text: hsl(0, 0%, 99%);
-  --gray: hsl(0, 0%, 13%);
-  --white: hsl(0, 0%, 99%);
+  --text:   hsl(0, 0%, 99%);
+  --gray:   hsl(0, 0%, 13%);
+  --white:  hsl(0, 0%, 99%);
 }
 
 .dark {
   color-scheme: dark;
-  --text: hsl(0, 0%, 13%);
-  --gray: hsl(0, 0%, 27%);
-  --white: hsl(0, 0%, 13%);
+  --text:   hsl(0, 0%, 13%);
+  --gray:   hsl(0, 0%, 27%);
+  --white:  hsl(0, 0%, 13%);
 }
 
 body {
