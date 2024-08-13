@@ -5,7 +5,7 @@ Il progetto è stato sviluppato partendo da:
 
 **• webpack** <br>
 **• sass**    <br>      
-**• html**    <br>
+**• html**
 
 > **landing page.**
 
