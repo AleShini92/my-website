@@ -20,7 +20,7 @@ Il progetto è stato sviluppato partendo da:
 • bottone che rimanda al top della pagina<br>
 • i pulsanti per cambiare la sezione "about me" che permette di vedere il portfolio e le mie "skills"<br>
 • il form per l'invio di messaggi con EmailJS<br>
-• la scroll-bar che emula quella di defoult di chrome<br>
+• la scroll-bar che emula quella di default di chrome<br>
 • il pulsante che cambia da light a dark mode<br>
 
 > ### **colori del progetto**
