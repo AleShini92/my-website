@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "logo.svg",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "91x83 64x64 32x32 24x24 16x16",
       "type": "image/svg+xml"
     },
     {
@@ -15,7 +15,7 @@
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "32x32"
     }
   ],
   "start_url": ".",
