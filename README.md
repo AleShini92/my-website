@@ -3,11 +3,11 @@ my website, and portfolio
 
 Il progetto è stato sviluppato partendo da:
 
-**• webpack** <br>
-**• sass**    <br>      
+**• webpack**<br>
+**• sass**<br>      
 **• html**
 
-> **landing page.**
+> ## **gitlanding page.**
 
 
 
@@ -23,7 +23,7 @@ js - ho implementato varie funzioni alla pagina come:
 • la scroll-bar che emula quella di defoult di chrome<br>
 • il pulsante che cambia da light a dark mode<br>
 
-> **colori del progetto**
+> ### **colori del progetto**
 
 
 `#e6007e`<br>
