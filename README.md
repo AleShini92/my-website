@@ -11,11 +11,11 @@ Il progetto è stato sviluppato partendo da:
 
 
 
-Webpack - mi ha permesso di raggruppare tutti i file in un file ottimizzato.
+**Webpack** - mi ha permesso di raggruppare tutti i file in un file ottimizzato.
 
-sass - ho potuto creare variabili che ho incorporato all'interno dei singoli tag come classi velocizzando così la stuttura css
+**sass** - ho potuto creare variabili che ho incorporato all'interno dei singoli tag come classi velocizzando così la stuttura css
 
-js - ho implementato varie funzioni alla pagina come:
+**js** - ho implementato varie funzioni alla pagina come:
 
 • bottone che rimanda al top della pagina<br>
 • i pulsanti per cambiare la sezione "about me" che permette di vedere il portfolio e le mie "skills"<br>
