@@ -1,4 +1,12 @@
 section.about__container {
+    container-type: inline-size;
+    container-name: skills;
+
+    @container skills (max-width: 426px) {
+        .about__text .skills .skills__container {
+            flex-direction: column;
+        }
+    }
 
     .about__me {
         display: grid;
@@ -16,6 +24,11 @@ section.about__container {
             height: 220px;
             overflow: hidden;
             width: clamp(200px, 100%, 700px);
+
+            @include media( "screen", ">minWidth", "<bp3Width" ){
+                display: flex;
+                justify-content: center;
+            }
 
             img {
                 width: 60%;
@@ -54,7 +67,7 @@ section.about__container {
         grid-column: 2;
         grid-row: 1 / 3;
         justify-content: space-between;
-        width: clamp(290px, 80%, 50rem);
+        width: clamp(290px, 100%, 50rem);
         
 
         article.about > span:first-child {
