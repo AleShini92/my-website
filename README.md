@@ -4,10 +4,10 @@ my website, and portfolio
 Il progetto è stato sviluppato partendo da:
 
 **• webpack**<br>
-**• sass**<br>
-**• html**
+**• html**<br>
+**• sass**
 
-> ## **landing page.**
+> ### **landing page.**
 
 
 
