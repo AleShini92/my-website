@@ -30,10 +30,10 @@ theme.addEventListener('click', (event) => {
   } else {
     // Se il cerchio non è spostato, lo sposta a destra
     circle.style.transform = `translateX(30px)`;
-    circle.style.background = "#ffc900";
+    circle.style.background = "hsl(302, 100%, 50%)";
 
     // cambio colore al click
-    theme.style.borderColor = "#ffc900";
+    theme.style.borderColor = "hsl(302, 100%, 50%)";
   }
 
   // Inverte lo stato per il prossimo click

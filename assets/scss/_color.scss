@@ -32,6 +32,10 @@ $colors: (
     border: 1px solid $val;
   }
 
+  .border-#{$key} {
+    border: 1px solid $val;
+  }
+
   .b-b_#{$key} {
     border-bottom: 1px solid $val;
   }
