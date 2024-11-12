@@ -16,6 +16,11 @@
       "src": "logo.png",
       "type": "image/png",
       "sizes": "32x32"
+    },
+    {
+      "src": "logo-dark.png",
+      "type": "image/png",
+      "sizes": "32x32"
     }
   ],
   "start_url": ".",

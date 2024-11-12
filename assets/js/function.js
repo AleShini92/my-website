@@ -4,31 +4,31 @@
 *
 */
 
-function mySkills() {
+var skills = document.querySelector("#skills");
+skills.addEventListener("click", () => {
+  var skill = document.querySelector("#my-skills");
+  var about = document.getElementById("myPortfolio");
 
-    var skill = document.getElementById("my-skills");
-    var about = document.getElementById("myPortfolio");
+  if (skill.style.display === "none") {
+      skill.style.display = "block"; // Show content
+      about.style.display = "none";
+  } else {
+      skill.style.display = "block"; // Hide content
+  }
+})
 
-    if (skill.style.display === "none") {
-        skill.style.display = "block"; // Show content
-        about.style.display = "none";
-    } else {
-        skill.style.display = "block"; // Hide content
-    }
+var portfolio = document.querySelector("#portfolio");
+portfolio.addEventListener("click", () => {
+  var myPortfolio = document.getElementById("myPortfolio");
+  var skill = document.getElementById("my-skills");
 
-}
-
-function portfolio() {
-    var portfolio = document.getElementById("myPortfolio");
-    var skill = document.getElementById("my-skills");
-
-    if(portfolio.style.display === "block") {
-      portfolio.style.display = "block";
-    } else {
-      portfolio.style.display = "block";
-      skill.style.display = "none"
-    }
-}
+  if(myPortfolio.style.display === "block") {
+    myPortfolio.style.display = "block";
+  } else {
+    myPortfolio.style.display = "block";
+    skill.style.display = "none"
+  }
+})
 
 
 

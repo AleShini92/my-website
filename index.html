@@ -24,10 +24,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alessandro Catucci - Front-end</title>
         <!-- link favicon -->
-        <link rel="icon" type="image/png" sizes="64x64" href="assets/public/logo.png" />
-        <link rel="manifest" href="assets/public/manifest.json" />
+        <link rel="icon" type="image/svg+xml" sizes="any" href="public/logo.svg" />
         <!-- favicon for safari -->
         <link rel="apple-touch-icon" href="assets/public/logo.png" />
+        <!-- manifest -->
+        <link rel="manifest" href="public/manifest.json" />
         <!-- send email js -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <!-- open graph -->
@@ -235,8 +236,8 @@
                         </article>
                         <!-- button js -->
                         <div class="button mt-20">
-                            <span class="portfolio mr-20 bg-primary b-r-1" onclick="portfolio()">portfolio</span>
-                            <span class="skills btn-primary b-r-1" onclick="mySkills()">skills</span>
+                            <span class="portfolio mr-20 bg-primary b-r-1" id="portfolio">portfolio</span>
+                            <span class="skills btn-primary b-r-1" id="skills">skills</span>
                         </div>
                     </div>
                 </div>
@@ -340,7 +341,7 @@
                                     </div>
                                     <div class="loader" style="opacity: 0"></div>
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </form>
