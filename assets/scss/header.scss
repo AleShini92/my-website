@@ -62,10 +62,11 @@ header {
     }
 
     span.hero__welcome {
+        $gray: hsla(0, 0%, 0%, .2);
         position: absolute;
         right: 50px;
         bottom: -40px;
-        filter: drop-shadow(0 0 4px hsla(0, 0, 0, 12%));
+        filter: drop-shadow(0 0 4px $gray);
         font-size: 10vw;
         color: transparent;
         background: linear-gradient(to right, $_blue-ligh, $_magent-light);
