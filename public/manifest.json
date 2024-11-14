@@ -1,27 +1,23 @@
 {
   "short_name": "my website",
   "name": "website",
-    "icon": {
-      "desktop": {
-        "regularIconTransformation": {
-          "type": "none"
-        },
-        "darkIconType": "none"
+    "icon": [
+      {
+        "src": "logo_20x20.svg",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/svg+xml"
       },
-      "touch": {
-        "transformation": {
-          "type": "none"
-        },
-        "appTitle": null
+      {
+        "src": "logo.png",
+        "type": "image/png",
+        "sizes": "64x64"
       },
-      "webAppManifest": {
-        "transformation": {
-          "type": "none"
-        },
-      "backgroundColor": "#ffffff",
-      "themeColor": "#ffffff"
-    }
-  },
+      {
+        "src": "logo.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      }
+    ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
